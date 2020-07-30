@@ -10,7 +10,7 @@ INSTALLED_PLUGINS += (
 INSTALLED_APPS += INSTALLED_PLUGINS
 
 
-SECRET_KEY = 'hgjzcao=+x-yqf$3ybrkcrbbu-)!a4_0l0r8b$daa=r6l-w-8%'
+SECRET_KEY = os.getenv('OPENSLIDES_SECRET', 'verySecret')
 
 DEBUG = False
 
